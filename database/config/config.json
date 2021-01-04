@@ -7,7 +7,6 @@
     "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "postgresql-symmetrical-0441",
-    "url": "postgresql-symmetrical-0441"
+    "use_env_variable": "postgresql-symmetrical-0441"
   }
 }
