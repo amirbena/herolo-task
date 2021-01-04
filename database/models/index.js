@@ -10,7 +10,9 @@ const db = {};
 
 let sequelize;
 if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  sequelize = new Sequelize(process.env.DATABASE_URL,{
+    logging: false //false
+  })
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
@@ -34,7 +36,7 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-db.messages=require('./message')(sequelize,Sequelize);
-db.users= require('./user')(sequelize,Sequelize);
+db.messages = require('./message')(sequelize, Sequelize);
+db.users = require('./user')(sequelize, Sequelize);
 
 module.exports = db;
