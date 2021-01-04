@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "root",
+    "database": "herolo",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "root",
+    "database": "herolo",
+    "host": "localhost",
+    "dialect": "postgres",
+    "use_env_variable": "postgresql-lively-71191",
+    "url": "postgres://meshyokhyokbjc:158ba41bba30298658b2047f9aea155bf0950adf272c1924df79285cdb6f1754@ec2-52-205-99-67.compute-1.amazonaws.com:5432/dhc2cksspukva "
+  }
+}
